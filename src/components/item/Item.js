@@ -3,12 +3,10 @@ import classes from "./Item.module.scss";
 
 const Item = (props) => {
   return (
-    <div className={classes.container} >
-         <figure className={classes.imgContainer} >
-           <img src={props.image} />
-           <figcaption>{props.title}</figcaption> 
-         </figure> 
-     </div>
+      <figure className={classes.container} >
+        <img src={props.image} />
+        <figcaption><strong>{props.brand} {props.model}</strong> - {props.price}</figcaption> 
+      </figure>
   );
 }
 

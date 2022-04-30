@@ -2,10 +2,21 @@
 
 .container{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.imgContainer{
-    display: flex;
-    height: 2.6rem;
-    margin: 0rem 0.5rem;
+
+.container > figure{
+    flex-basis: 21%;
+    margin: 1rem 2%;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .container > figure{
+        flex-basis: 46%;
+        margin: 1rem 2%;
+    }
+    
 }
