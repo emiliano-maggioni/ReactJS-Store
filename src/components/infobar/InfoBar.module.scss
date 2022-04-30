@@ -1,0 +1,35 @@
+@import "Utility.scss";
+
+.container{
+    width: 100vw;
+    display: flex;
+    height: 2.2rem;
+    background:$color3;
+    color:$textColor2;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    align-items: center;
+    padding-left:3rem;
+    flex: 1;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.container > figure, .container > span{
+    cursor:pointer;
+}
+
+.imgContainer{
+    display: flex;
+    height: 2.6rem;
+    margin: 0rem 0.5rem;
+}
+.imgContainer img{
+    align-self: center;
+    animation: spin 20000ms linear infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

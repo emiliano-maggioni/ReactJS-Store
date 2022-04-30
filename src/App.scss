@@ -4,9 +4,35 @@
 html{
   font-size:16px;
 }
+figure{
+  padding:0.4rem;
+  margin:0px;
+}
+figure > img{
+  max-height:100%;
+}
 
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: $textColor1;
+}
 
-.App {
-  text-align: center;
-  color: $colbase;
+body *{
+  box-sizing: border-box;
+}
+#root{
+  width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+  height:calc(100vh - 6.4rem);
+  background:$color2;
+}
+
+main > div{
+  box-sizing: border-box;
 }
