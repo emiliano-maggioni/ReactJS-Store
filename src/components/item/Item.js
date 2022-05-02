@@ -5,7 +5,7 @@ const Item = (props) => {
   return (
       <figure className={classes.container} >
         <img src={props.image} />
-        <figcaption><strong>{props.brand} {props.model}</strong> - {props.price}</figcaption> 
+        <figcaption><strong>{props.brand} {props.model}</strong> - {props.price}€</figcaption> 
       </figure>
   );
 }
