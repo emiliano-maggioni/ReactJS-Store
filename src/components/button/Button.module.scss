@@ -1,22 +1,25 @@
 .container{
-    background: #d1e420;
-    color: #000;
-    border-radius: 1rem;
-    padding: 0.8rem 1.1rem;
-    font-size: 1.4rem;
+    background: #61dafb;
+    color: #363636;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border: 0px;
+    height: 2.8rem;
     transition: background 0.4s ease-in;
     cursor: pointer;
-    box-shadow: 0px 0.5rem 0px #7f8d00;
+    box-shadow: 0px 0.2rem 0px #3092ad;
+    -webkit-user-select: none;
     user-select: none;
     position: relative;
     letter-spacing: 0.1rem;
+    max-width: 17rem;
 }
 .container:hover{
-    background: #d1e420;
+    background: #61dafb;
 }
 .container:active {
-    top: 0.3rem;
-	box-shadow: 0px 0.2rem 0px #7f8d00;
+    top: 0.1rem;
+	box-shadow: 0px 0.1rem 0px #3092ad;
 }

@@ -3,7 +3,6 @@ export const checkIfDataExpired = (dateExp) => {
     if(dateExp){
         const actual = new Date();
         let  diff = (dateExp.getTime() - actual.getTime()) / 1000;
-        console.log("diff :"+diff);
         if(diff <= 0)
             return true;
         else
@@ -16,10 +15,18 @@ export const checkIfDataExpired = (dateExp) => {
 
 
 export const createExpDate = () => {
-    //CREATE AN EXPIRATION DATE FROM ACTUAL TIME ADDING AN HOUR.
-    //let expDate = new Date(Date.now() + (60 * 60 * 1000) );
-    let expDate = new Date(Date.now() + (20 * 1000) );
-        console.log("expDate:",expDate);
+    //CREATE AN EXPIRATION DATE ADDING AN HOUR TO ACTUAL TIME.
+        //let expDate = new Date(Date.now() + (10 * 1000) );
+    let expDate = new Date(Date.now() + (60 * 60 * 1000) );
         return expDate; 
 };
+
+export const filterApiCachedByUrl = (cached,url) => {
+    let res = cached.filter((el) => el.url == url);
+    if(res?.length)
+       return res[0].data; 
+    else
+       return [];
+};
+
 

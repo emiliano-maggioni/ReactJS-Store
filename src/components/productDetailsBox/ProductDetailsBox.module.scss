@@ -1,0 +1,14 @@
+@import "Utility.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background:$color4;
+    overflow:hidden;
+}
+
+.container > p  {
+    padding: 1rem;
+    margin: 0px;
+}
+.container > p:nth-child(even) {background: $color2}

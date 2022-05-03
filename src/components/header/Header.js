@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={classes.container} >     
       <div  className={classes.topBar}>
-        <figure className={classes.imgContainer} onClick={() => navigate("/")}  ><img src="logo192.png" /> </figure> 
+        <figure className={classes.imgContainer} onClick={() => navigate("/")}  ><img src="/logo192.png" /> </figure> 
         <span  onClick={()=>  navigate("/")} >ReactJS test</span>
       </div>
 

@@ -1,11 +1,12 @@
-import React, { useRef }  from 'react'
+import React, { useRef, useContext }  from 'react'
 import classes from "./SearchBar.module.scss";
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-
+import { Context } from "contexts/Context"; 
 
 const SearchBar = (props) => {
+  const defcontext = useContext(Context); 
   
   const inputRef = useRef(); 
 
@@ -13,7 +14,7 @@ const SearchBar = (props) => {
     let oldVal = inputRef.current.value;
     const timer = setTimeout(() => {
       if(oldVal == inputRef.current.value){
-        console.log("-----> FILTRIAMO RISULTATI");
+        defcontext.setItemsFilter(inputRef.current.value);
       }
     }, 500); 
     return() => {
@@ -35,7 +36,7 @@ const SearchBar = (props) => {
             </InputAdornment>
           ),
         }}
-        variant="standard"
+        variant="outlined"
         onChange={(e) => searchProducts(e.target.value)}
       />
      </div>

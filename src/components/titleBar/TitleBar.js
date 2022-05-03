@@ -1,5 +1,5 @@
-import Button from 'components/button/Button';
 import React  from 'react'
+import Button from 'components/button/Button';
 import classes from "./TitleBar.module.scss";
 import { useNavigate } from "react-router-dom";
 

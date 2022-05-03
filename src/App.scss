@@ -32,10 +32,15 @@ body *{
 }
 
 main{
-  height:calc(100vh - 6.4rem);
+  height:calc(100vh - 8rem);
   background:$color2;
 }
 
 main > div{
   box-sizing: border-box;
 }
+
+div p.MuiFormHelperText-root{
+  color:#ff0000;
+}
+
