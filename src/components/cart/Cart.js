@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import classes from "./Cart.module.scss";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import { Context } from "contexts/Context"; 
-import Modal from "components/modal/Modal"; 
+import { Context } from "contexts/Context";
+import Modal from "components/modal/Modal";
 
 const Cart = (props) => {
   const defcontext = useContext(Context);
@@ -15,12 +15,12 @@ const Cart = (props) => {
   };
 
   return (<>
-    <div className={classes.container} onClick={()=> handleClickOpen()}  >  
+    <div className={classes.container} onClick={() => handleClickOpen()}  >
       CART {defcontext.cart?.length}
-      <ShoppingCartOutlinedIcon />       
+      <ShoppingCartOutlinedIcon />
     </div>
     <Modal open={open} onClose={handleClose} cart={defcontext.cart} />
-    </>
+  </>
   );
 }
 

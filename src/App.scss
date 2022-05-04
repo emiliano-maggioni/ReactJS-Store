@@ -43,4 +43,12 @@ main > div{
 div p.MuiFormHelperText-root{
   color:#ff0000;
 }
+label.MuiFormLabel-root.Mui-focused{
+  color:$textColor2;
+}
+
+
+div.MuiOutlinedInput-root.Mui-focused fieldset.MuiOutlinedInput-notchedOutline{
+  border-color: $textColor2;
+}
 

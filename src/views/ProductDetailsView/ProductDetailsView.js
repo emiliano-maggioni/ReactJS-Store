@@ -47,14 +47,9 @@ const ProductDetailsView = () => {
             <ProductDetailsBox prodData={prodData} />
             <ProductDetailsOptions prodData={prodData} />
           </div>
-        </div>
-
-
-      )
+        </div>)
         : (<p>Waiting for datas...</p>)
       }
-
-
     </section>
   );
 }
