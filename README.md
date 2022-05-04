@@ -4,7 +4,7 @@ ReactJS-Store is small Single Page Application made with ReactJS, Create-React-A
 
 ## Get started
 
-To run project locally, once you have ReactJS working on your machine (NodeJS, Node Package Manager...) you can run npm start from your terminal.
+To run project locally, once you have ReactJS working on your machine (NodeJS, Node Package Manager...) and you have install the project dependencies (npm install) you can run npm start from your terminal.
 
 ```bash
 npm start
