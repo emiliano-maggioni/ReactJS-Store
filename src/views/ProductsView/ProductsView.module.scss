@@ -1,0 +1,12 @@
+@import "Utility.scss";
+
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: $paddingViews;
+
+}

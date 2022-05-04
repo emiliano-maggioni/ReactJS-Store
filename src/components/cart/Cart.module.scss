@@ -1,0 +1,16 @@
+@import "Utility.scss";
+
+.container{
+    display: flex;
+    align-items: center;
+    min-width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container > svg{
+    font-size: 1.8rem;
+}
+
+
+

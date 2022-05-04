@@ -1,0 +1,21 @@
+@import "Utility.scss";
+
+.container{
+    display: flex;
+    background:$color4;
+    padding: 1.2rem 1.2rem 2rem 1.2rem;
+    flex-direction: column;
+    width: 48rem;
+    max-width: 90vw;
+}
+.container h2{
+    display: flex;
+    background:$color3;
+    padding: 1rem;
+    margin-top: 0px;
+}
+.container  h2 svg{
+    margin-left: auto;
+    cursor:pointer;
+}
+.container li{  padding: 0.4rem 0rem; }
