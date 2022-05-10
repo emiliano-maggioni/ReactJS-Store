@@ -36,7 +36,7 @@ const ProductsView = () => {
     <section className={classes.container} >
           <TitleBar title="Product List Page" />
           <SearchBar />
-          <ItemsContainer list={(defcontext.searchString) ? list.filter((el) => (el.brand == defcontext.searchString) ||  (el.model == defcontext.searchString) ) : list } />
+          <ItemsContainer list={(defcontext.searchString) ? list.filter((el) => (el.brand.toLowerCase() == defcontext.searchString) ||  (el.model.toLowerCase() == defcontext.searchString) ) : list } />
      </section>
   );
 }

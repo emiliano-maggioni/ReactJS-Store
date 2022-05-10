@@ -16,7 +16,11 @@ export const ContextProvider = (props) => {
     
     
     const [apiCachedData,setApiCachedData] = useState([]);      
-    const setItemsFilter = (filter)=>{    setSearchString(filter);  }
+    const setItemsFilter = (filter)=>{   
+        if(filter)
+          filter =  filter.toString().toLowerCase();
+        setSearchString(filter); 
+    }
     const setCartData = (datas) =>{ 
           let cartdata = [...cartData];
           cartdata = cartdata.filter((el) => el.id !== datas.id);       

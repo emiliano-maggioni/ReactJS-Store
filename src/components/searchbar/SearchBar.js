@@ -13,9 +13,8 @@ const SearchBar = (props) => {
   const searchProducts = (val) => {
     let oldVal = inputRef.current.value;
     const timer = setTimeout(() => {
-      if (oldVal == inputRef.current.value) {
-        defcontext.setItemsFilter(inputRef.current.value);
-      }
+        if (oldVal == inputRef.current.value)
+          defcontext.setItemsFilter(inputRef.current.value);      
     }, 500);
     return () => {
       clearTimeout(timer);
