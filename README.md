@@ -1,7 +1,7 @@
 # ReactJS Store
 
 ReactJS-Store is small Single Page Application made with ReactJS, Create-React-App, Material UI, SASS (and other packages like Axios, react-hook-form, react-router-dom).
-You can see the project requirements [here](./public/project_requirements.pdf)
+<br />You can see the project requirements [here](./public/project_requirements.pdf)
 
 ## Get started
 
